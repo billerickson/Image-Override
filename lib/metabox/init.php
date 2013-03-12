@@ -56,8 +56,13 @@ class cmb_Meta_Box_Validate {
 /*
  * url to load local resources.
  */
-
-define( 'CMB_META_BOX_URL', trailingslashit( str_replace( WP_CONTENT_DIR, WP_CONTENT_URL, dirname(__FILE__) ) ) );
+define( 'CMB_META_BOX_URL',
+  trailingslashit(str_replace(
+    array(WP_CONTENT_DIR, WP_PLUGIN_DIR),
+    array(WP_CONTENT_URL, WP_PLUGIN_URL),
+    dirname(__FILE__)
+  ))
+);
 
 /**
  * Create meta boxes
