@@ -123,4 +123,3 @@ class BE_Image_Override {
 }
 
 new BE_Image_Override;
-?>
