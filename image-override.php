@@ -83,6 +83,10 @@ class BE_Image_Override {
 		$parent = get_post_ancestors( $id );
 		if( empty( $parent ) ) return $output;
 		
+		// Only resize if size is a registered image size (string)
+		if( is_array( $size ) )
+			return $output;
+		
 		$override = esc_url( get_post_meta( $parent[0], 'image_override_' . $size, true ) );
 		if (empty( $override) ) return $output;
 		
