@@ -3,8 +3,8 @@ Contributors: billerickson
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K9K2YFSJAMLKE
 Tags: image, thumbnail, featured, 
 Requires at least: 3.0
-Tested up to: 3.4.1
-Stable tag: 1.1
+Tested up to: 3.6
+Stable tag: 1.2
 
 Allows you to override WordPress' auto generated thumbnails. 
 
@@ -31,6 +31,9 @@ This plugin will add a metabox to every post type and allow you to modify every 
 5. Any function you're currently using to display the image (ex: the_post_thumbnail( 'medium' ) ) will now display the new image if the override is applied to that size.
 
 == Changelog ==
+
+= 1.2 = 
+* Update metabox script to version 0.9.3
 
 = 1.1 = 
 * Add localization
