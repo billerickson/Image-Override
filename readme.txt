@@ -32,6 +32,9 @@ This plugin will add a metabox to every post type and allow you to modify every 
 
 == Changelog ==
 
+= 1.3 =
+* Fix issue in metabox script to allow changing of WP Content directory
+
 = 1.2 = 
 * Fixed an issue if you use an array for the image size
 * Update metabox script to version 0.9.3
